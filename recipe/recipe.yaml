@@ -1,15 +1,16 @@
 schema_version: 1
 
 context:
+  name: gempakio
   version: "1.4.4"
   python_min: "3.11"
 
 package:
-  name: gempakio
+  name: ${{ name }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: a903971834029511ceee0e4f8fdf95eb70f97e0440236e36721b057d0e629e91
 build:
   noarch: python
